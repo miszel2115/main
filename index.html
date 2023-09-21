@@ -1,75 +1,75 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="Content-Language" content="pl">
-    <meta name="Reply-to" content="kontakt@miszel.pl">
-    <meta name="Title" content="Miszel Zone">
-    <meta name="page-topic" content="Muzyka, programy, samochody">
-    <meta name="Creation_Date" content="2023-09-12">
-    <meta name="Keywords" content="programy, muzyka, samochody">
-    <meta name="Description" content="Strona zawiera informacje o muzyce, programach komputerowych oraz motoryzacji.">
-    <meta name="Robots" content="index, follow">
-    
-    <title>J_PZPN</title>
-     <style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2115</title>
+    <style>
+        /* Dodaj stylizację według potrzeb */
         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff0000;
+            color: rgb(255, 0, 0);
             text-align: center;
+            padding: 20px;
         }
-
-        #container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        nav {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 10px;
         }
-
-        img {
-            max-width: 100%;
-            max-height: 100%;
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Witaj na mojej stronie!</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Strona główna</a></li>
-                <li><a href="#">O mnie</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-        </nav>
+        <img src="2115.png" alt="Logo Firmy" style="width: 500px; height: 500px;">
+        <h1>Moje Logo</h1>
+        <p>Siema</p>
     </header>
-    
-    <main>
-        <section>
-            <h2>O mnie</h2>
-            <p>Mam na imię Michał, i tworzę tą stronę.</p>
-            <p style="text-indent: 20px; text-align: justify;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, lorem eu facilisis finibus,
-                libero libero efficitur orci, non suscipit tortor sem ac libero. Suspendisse potenti. In bibendum
-                justo vitae nunc bibendum, a posuere sapien lacinia. Vestibulum ante ipsum primis in faucibus orci
-                luctus et ultrices posuere cubilia Curae; Sed pellentesque ligula id elit fermentum volutpat. Vivamus
-                facilisis dolor nec scelerisque. Nulla facilisi. Duis ut libero ut est hendrerit laoreet sed eu nunc.
-                Nulla facilisi. Pellentesque rhoncus felis vel mi tempus, eu bibendum ligula volutpat. Maecenas non
-                posuere nunc. Vestibulum vel risus eget tellus volutpat euismod. Suspendisse in bibendum urna.
-            </p>
-            
-        </section>
-        <div id="container">
-            <img src="Mo salah - Imgur.jpg" alt="Opis obrazka">
-        </div>
-        
-        <section>
-            <h2>Kontakt</h2>
-            <p>Możesz się ze mną skontaktować pod adresem sor.salach-jest/najlepszy@example.com.</p>
-        </section>
-    </main>
-    
+    <nav>
+        <a href="#">Strona Miszela</a>
+        <a href="https://sklep.2115.pl/pl/p/2115-RODZINNY-BIZNES-MIXTAPE-2-CD-STANDARD/41">O Nas</a>
+        <a href="https://sklep.2115.pl/">Sklep</a>
+        <a href="https://sklep.2115.pl/pl/i/KONTAKT/9">Kontakt</a>
+    </nav>
+    <section>
+        <h2>Strona Główna</h2>
+		<img src="łajcior1.jpg" alt="Łajcior" style="width: 1100px; height: 700px;">
+        <img src="łajcior2.jpg" alt="Łajcior" style="width: 1389px; height: 1200px;">
+    </section>
     <footer>
-        <p>&copy; 2023 Made by Miszel</p>
+        <p>&copy; 2023 By Miszel</p>
+        <p>Data: <span id="currentDate"></span></p>
+        <script>
+            // JavaScript, który automatycznie ustawia aktualną datę
+            const currentDateElement = document.getElementById('currentDate');
+            const currentDate = new Date();
+            const year = currentDate.getFullYear();
+            const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+            const day = currentDate.getDate().toString().padStart(2, '0');
+            currentDateElement.textContent = `${day}.${month}.${year}`;
+        </script>
     </footer>
 </body>
 </html>
+
