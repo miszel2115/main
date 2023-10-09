@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2115</title>
     <style>
-        /* Dodaj stylizację według potrzeb */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -88,6 +87,33 @@
             margin: 10px;
             flex-basis: calc(50% - 20px);
         }
+
+        iframe {
+            width: 100%;
+            height: 315px;
+        }
+
+        #image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #image-container img {
+            width: 560px;
+            height: 315px;
+        }
+
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 80px;
+        }
+
+        .center-container audio {
+            margin-top: 80px;
+        }
     </style>
 </head>
 <body>
@@ -102,24 +128,32 @@
     </nav>
     <section>
         <h2>Strona Główna</h2>
-        <section id="video-container">
-            <div class="video">
-                <iframe width="430" height="476" src="https://www.youtube.com/embed/JZBKm2BVUL4" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="video">
-            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F100038756511179%2Fvideos%2F1039629600784403%2F&show_text=false&width=267&t=0" width="430" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-            </div>
-            <section id="photo">
-            <div class="photo">
-                <img src="łajcior1.jpg" alt="Łajcior" style="width: 900px; height: 500px;">
-                <img src="łajcior2.jpg" alt="Łajcior" style="width: 789px; height: 600px;">
-                </div>
-            </section>
-            <audio controls autoplay>
-                <source src="jade.mp3" type="audio/mpeg">
-                Twoja przeglądarka nie obsługuje elementu audio.
-              </audio>
-            </div> 
+    </section>
+        
+    <section id="video-container">
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JZBKm2BVUL4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F100038756511179%2Fvideos%2F1039629600784403%2F&show_text=false&width=267&t=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+    <div id="image-container">
+        <img src="łajcior1.jpg" alt="Obrazek" width="560" height="315">
+        <img src="łajcior2.jpg" alt="Obrazek" width="560" height="315">
+    </div>
+
+    <div class="center-container">
+        <h2>UWAGA</h2>
+        <audio controls autoplay>
+            <source src="jade.mp3" type="audio/mp3">
+            Twoja przeglądarka nie obsługuje odtwarzacza audio.
+        </audio>
+    </div>
+
+    <section>
         <table>
             <thead>
                 <tr>
