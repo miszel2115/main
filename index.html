@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2115 - główna</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #cc0404;
+            color: #cc0404;
+            text-align: center;
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            background-color: #444;
+            color: #cc0404;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white; /* kolor liter w odniesieniach*/
+            margin: 10px;
+        }.rectangle {
+            width: 500px;
+            height: 250px;
+            background-color: #323638;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            float: center;
+            transition: background-color 0.3s;
+        }
+
+        .rectangle a {
+            text-decoration: none;
+            color: #fff; /* kolor liter w odniesieniach*/
+            font-weight: bold;
+        }
+        .rectangle:hover {
+            background-color: #cc0404;
+        }
+    
+       
+    </style>
+</head>
+<body>
+    <header>
+        <img src="21i15.png" alt="Logo Strony" style="width: 500px; height: 500px;">
+    </header>
+    <nav>
+        <a href="https://miszel2115.github.io/main/" >Strona Miszela</a>
+        <a href="https://sklep.2115.pl/pl/p/2115-RODZINNY-BIZNES-MIXTAPE-2-CD-STANDARD/41" target="_blank">O Nas</a>
+        <a href="https://sklep.2115.pl/" target="_blank">Sklep</a>
+        <a href="https://sklep.2115.pl/pl/i/KONTAKT/9" target="_blank">Kontakt</a>
+    </nav>
+    <div class="rectangle" onclick="window.location.href = 'https://miszel2115.github.io/form';">
+        <a href="https://miszel2115.github.io/form/" >Formularze </a>
+    </div>
+    <div class="rectangle" onclick="window.location.href = 'https://miszel2115.github.io/torcik';">
+        <a href="https://miszel2115.github.io/torcik/">Torcik</a>
+    </div>
+    <div class="rectangle" onclick="window.location.href = 'https://miszel2115.github.io/multimedia';">
+        <a href="https://github.com/miszel2115/multimedia/" >Multimedia</a>
+    </div>
+    <div class="rectangle" onclick="window.location.href = 'https://miszel2115.github.io/tabele';">
+        <a href="https://github.com/miszel2115/tabele/" >Tabela</a>
+    </div>
+
+
+<footer>
+    <p>&copy; 2023 By Miszel</p>
+    <p>Data: <span id="currentDate"></span></p>
+    <script>
+       function aktualizujDate() {
+        const currentDateElement = document.getElementById("currentDate");
+        const aktualnaData = new Date();
+        currentDateElement.textContent = aktualnaData.toLocaleDateString() + " " + aktualnaData.toLocaleTimeString();
+    }
+
+    // Wywołanie funkcji aktualizującej datę na początku
+    aktualizujDate();
+
+    // Ustawienie interwału, aby odświeżać datę co sekundę
+    setInterval(aktualizujDate, 1000);
+
+    </script>
+</footer>
+</body>
+</html>
