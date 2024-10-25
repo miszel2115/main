@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2115 - główna</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <img src="21i15.png" alt="Logo Strony" style="width: 500px; height: 500px;">
+        <div class="header-buttons">
+            <a href="index.html" class="button">Start</a>
+            <a href="projekty.html" class="button">Projekty</a>
+            <a href="kontakt.html" class="button">Kontakt</a>
+        </div>
+    </header>
+<footer>
+    <p>&copy; 2024 By Miszel</p>
+    <p>Data: <span id="currentDate"></span></p>
+    <script>
+       function aktualizujDate() {
+        const currentDateElement = document.getElementById("currentDate");
+        const aktualnaData = new Date();
+        currentDateElement.textContent = aktualnaData.toLocaleDateString() + " " + aktualnaData.toLocaleTimeString();
+    }
+
+    // Wywołanie funkcji aktualizującej datę na początku
+    aktualizujDate();
+
+    // Ustawienie interwału, aby odświeżać datę co sekundę
+    setInterval(aktualizujDate, 1000);
+
+    </script>
+</footer>
+</body>
+</html>
